@@ -146,14 +146,17 @@ export default class KontaksList extends Component {
             <div>
               <h4>Kontak</h4>
               <div>
-                <label>
-                  <strong>Title:</strong>
-                </label>{" "}
-                {currentKontak.title}
+                <img src={currentKontak.picture.thumbnail} width="24" height="24"></img>
               </div>
               <div>
                 <label>
-                  <strong>Description:</strong>
+                  <strong>Nama:</strong>
+                </label>{" "}
+                {currentKontak.name.title + currentKontak.name.first + currentKontak.name.last }
+              </div>
+              <div>
+                <label>
+                  <strong>Lahir:</strong>
                 </label>{" "}
                 {currentKontak.description}
               </div>
