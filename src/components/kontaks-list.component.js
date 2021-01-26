@@ -36,9 +36,9 @@ export default class KontaksList extends Component {
     KontakDataService.getAll()
       .then(response => {
         this.setState({
-          kontaks: response.data
+          kontaks: response.data.results
         });
-        console.log(response.data);
+        console.log(response.data.results);
       })
       .catch(e => {
         console.log(e);
