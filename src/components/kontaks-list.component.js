@@ -91,8 +91,7 @@ export default class KontaksList extends Component {
 
   render() {
     const { searchTitle, kontaks, currentKontak, currentIndex } = this.state;
-    let gender;
-
+    
     return (
       <div className="list row">
         <div className="col-md-8">
@@ -165,8 +164,8 @@ export default class KontaksList extends Component {
                 <label>
                   <strong>Jenis Kelamin:</strong>
                 </label>{" "}
-                {currentKontak.gender}
-                {/* {currentKontak.gender = 'female' ? 'Perempuan' : 'Cowo'} */}
+                {/* {currentKontak.gender} */}
+                {currentKontak.gender == 'female' ? 'Perempuan' : 'Cowo'}
               </div>
               <div>
                 <label>
