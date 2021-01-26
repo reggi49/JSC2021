@@ -128,6 +128,7 @@ export default class KontaksList extends Component {
                   onClick={() => this.setActiveKontak(kontak, index)}
                   key={index}
                 >
+                  <img src={kontak.picture.thumbnail} width="24" height="24"></img>
                   {kontak.name.first}
                 </li>
               ))}
