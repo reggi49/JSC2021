@@ -91,6 +91,7 @@ export default class KontaksList extends Component {
 
   render() {
     const { searchTitle, kontaks, currentKontak, currentIndex } = this.state;
+    let gender;
 
     return (
       <div className="list row">
@@ -158,7 +159,49 @@ export default class KontaksList extends Component {
                 <label>
                   <strong>Lahir:</strong>
                 </label>{" "}
-                {currentKontak.description}
+                {currentKontak.dob.date}
+              </div>
+              <div>
+                <label>
+                  <strong>Jenis Kelamin:</strong>
+                </label>{" "}
+                {currentKontak.gender}
+                {/* {currentKontak.gender = 'female' ? 'Perempuan' : 'Cowo'} */}
+              </div>
+              <div>
+                <label>
+                  <strong>Surel:</strong>
+                </label>{" "}
+                {currentKontak.email}
+              </div>
+              <div>
+                <label>
+                  <strong>Telepon:</strong>
+                </label>{" "}
+                {currentKontak.phone}
+              </div>
+              <div>
+                <label>
+                  <strong>Seluler:</strong>
+                </label>{" "}
+                {currentKontak.cell}
+              </div>
+              <div>
+                <label>
+                  <strong>Tempat Tinggal:</strong>
+                </label>{" "}
+                {currentKontak.location.street.number},
+                {currentKontak.location.street.name},
+                {currentKontak.location.city},
+                {currentKontak.location.state},
+                {currentKontak.location.country},
+                {currentKontak.location.postcode}
+              </div>
+              <div>
+                <label>
+                  <strong>Koordinat:</strong>
+                </label>{" "}
+                {currentKontak.location.coordinates.latitude}, {currentKontak.location.coordinates.longitude}
               </div>
               <div>
                 <label>
