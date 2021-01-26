@@ -128,7 +128,7 @@ export default class KontaksList extends Component {
                   onClick={() => this.setActiveKontak(kontak, index)}
                   key={index}
                 >
-                  {kontak.title}
+                  {kontak.name.first}
                 </li>
               ))}
           </ul>
