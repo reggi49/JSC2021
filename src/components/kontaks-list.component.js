@@ -147,7 +147,7 @@ export default class KontaksList extends Component {
             <div>
               <h4>Kontak</h4>
               <div>
-                <img src={currentKontak.picture.thumbnail} width="24" height="24"></img>
+                <img src={currentKontak.picture.thumbnail} width="256" height="256"></img>
               </div>
               <div>
                 <label>

@@ -9,7 +9,10 @@ anda dapat menjalankan project react dengan menggunakan terminal
 1. Kemudian masuk ke direktori project anda
     > cd NAMA_PROJECT (cd JSC2021)
 
-2. Jalankan development server react native
+2. Install depedencies direktori project anda
+    > npm install
+
+3. Jalankan development server react native
     > npm start
     > atau react-native start
     
