@@ -152,7 +152,7 @@ export default class KontaksList extends Component {
                 <label>
                   <strong>Nama:</strong>
                 </label>{" "}
-                {currentKontak.name.title + currentKontak.name.first + currentKontak.name.last }
+                {currentKontak.name.title +' '+ currentKontak.name.first +' '+ currentKontak.name.last }
               </div>
               <div>
                 <label>
